@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:makelicous/categories_sreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,6 +38,9 @@ class MyHomePage extends StatelessWidget {
           foregroundColor: Colors.white,
           title: Text("MAKOLICIOUS"),
         ),
-        body: Center(child: Text("meals")));
+        body: Container(
+          child: CategoriesSreen(),
+          padding: EdgeInsets.only(top: 20, right: 10, left: 10),
+        ));
   }
 }
