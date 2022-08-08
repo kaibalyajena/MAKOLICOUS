@@ -12,13 +12,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'MAKOLICOUS',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.orange,
-      ),
-      home: MyHomePage(),
-    );
+        title: 'MAKOLICOUS',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          primarySwatch: Colors.orange,
+        ),
+        home: Scaffold(
+          appBar: AppBar(
+            title: const Text("MAKOLICIOUS"),
+            backgroundColor: Color.fromARGB(255, 244, 131, 87),
+            foregroundColor: Colors.white,
+          ),
+          body: CategoriesSreen(),
+        ));
   }
 }
 
@@ -29,18 +35,18 @@ class MyApp extends StatelessWidget {
 //   State<MyHomePage> createState() => _MyHomePageState();
 // }
 
-class MyHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 244, 131, 87),
-          foregroundColor: Colors.white,
-          title: Text("MAKOLICIOUS"),
-        ),
-        body: Container(
-          child: CategoriesSreen(),
-          padding: EdgeInsets.only(top: 20, right: 10, left: 10),
-        ));
-  }
-}
+// class MyHomePage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//         appBar: AppBar(
+//           backgroundColor: Color.fromARGB(255, 244, 131, 87),
+//           foregroundColor: Colors.white,
+//           title: Text("MAKOLICIOUS"),
+//         ),
+//         body: Container(
+//           child: CategoriesSreen(),
+//           padding: EdgeInsets.only(top: 20, right: 10, left: 10),
+//         ));
+//   }
+// }
