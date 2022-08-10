@@ -8,7 +8,13 @@ class CategoryItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(15),
-      child: Text(title),
+      child: Center(
+        child: Text(
+          title,
+          style: TextStyle(
+              fontFamily: 'MouseMemoirs', fontSize: 30, color: Colors.black54),
+        ),
+      ),
       decoration: BoxDecoration(
           gradient: LinearGradient(
               colors: [color.withOpacity(0.3), color.withOpacity(0.65), color],
