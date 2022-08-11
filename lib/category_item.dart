@@ -12,7 +12,7 @@ class CategoryItem extends StatelessWidget {
         child: Text(
           title,
           style: TextStyle(
-              fontFamily: 'MouseMemoirs', fontSize: 30, color: Colors.black54),
+              fontFamily: 'MouseMemoirs', fontSize: 28, color: Colors.black54),
         ),
       ),
       decoration: BoxDecoration(
