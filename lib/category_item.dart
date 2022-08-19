@@ -4,11 +4,12 @@ import 'package:makelicous/category_meals_screen.dart';
 class CategoryItem extends StatelessWidget {
   String title = "";
   Color color = Colors.orange;
-  CategoryItem(this.title, this.color);
+  String id = "";
+  CategoryItem(this.title, this.color, this.id);
 
   void selectCategory(BuildContext ctx) {
     Navigator.of(ctx).push(MaterialPageRoute(builder: (_) {
-      return CategoryMealsScreen();
+      return CategoryMealsScreen(id, title);
     }));
   }
 
