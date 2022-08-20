@@ -16,19 +16,9 @@ class CategoryMealsScreen extends StatelessWidget {
         backgroundColor: Color.fromARGB(255, 244, 131, 87),
         foregroundColor: Colors.white,
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Center(
-              child: Text("meals in each category"),
-            ),
-            Center(
-              child: Text(category_id as String),
-            )
-          ],
-        ),
-      ),
+      // body: ListView.builder(itemBuilder: (ctx, index){
+
+      // },itemCount: ,)
     );
   }
 }
