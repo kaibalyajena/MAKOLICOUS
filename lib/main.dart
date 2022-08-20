@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:makelicous/categories_sreen.dart';
+import 'package:makelicous/category_meals_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.orange,
         ),
+        routes: {'/categories': (context) => CategoryMealsScreen()},
         home: Scaffold(
           appBar: AppBar(
             title: const Text("MAKOLICIOUS"),
